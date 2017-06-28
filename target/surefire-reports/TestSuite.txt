@@ -1,0 +1,98 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 5, Errors: 0, Skipped: 3, Time elapsed: 61.482 sec <<< FAILURE!
+loginTest(mail.LogInTest)  Time elapsed: 2.735 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"PH_logoutLink"}
+Command duration or timeout: 1.85 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EPRURYAW0080', ip: '10.19.13.114', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=36.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 71ddefa3-bd4a-4aca-a66d-3281e716c414
+*** Element info: {Using=id, value=PH_logoutLink}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at pages.MainPage.isElementPresent(MainPage.java:51)
+	at mail.LogInTest.loginTest(LogInTest.java:106)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"PH_logoutLink"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EPRURYAW0080', ip: '10.19.13.114', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ANNA_I~1/AppData/Local/Temp/anonymous4805954398391995763webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/ANNA_I~1/AppData/Local/Temp/anonymous4805954398391995763webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/ANNA_I~1/AppData/Local/Temp/anonymous4805954398391995763webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/ANNA_I~1/AppData/Local/Temp/anonymous4805954398391995763webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/ANNA_I~1/AppData/Local/Temp/anonymous4805954398391995763webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+cleanUpAndLogOut(mail.LogInTest)  Time elapsed: 23.515 sec  <<< FAILURE!
+java.lang.ClassCastException: com.sun.proxy.$Proxy8 cannot be cast to org.openqa.selenium.By
+	at mail.LogInTest.cleanUpAndLogOut(LogInTest.java:187)
+writeLetterTest(mail.LogInTest)  Time elapsed: 14.029 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//textarea[@data-original-name='To']"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EPRURYAW0080', ip: '10.19.13.114', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ANNA_I~1\AppData\Local\Temp\scoped_dir12972_32421}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 25d71307ad0fde5cd711cdfa6bdfa434
+*** Element info: {Using=xpath, value=//textarea[@data-original-name='To']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at pages.MailPage.writeAddress(MailPage.java:73)
+	at mail.LogInTest.writeLetterTest(LogInTest.java:119)
+writeLetterTest(mail.LogInTest)  Time elapsed: 3.719 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: unknown error: Element <input class="b-input" data-bem="b-input" tabindex="7" name="Subject" type="text"> is not clickable at point (594, 199). Other element would receive the click: <div class="b-correspondent__text">...</div>
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 45 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EPRURYAW0080', ip: '10.19.13.114', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ANNA_I~1\AppData\Local\Temp\scoped_dir12972_32421}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 25d71307ad0fde5cd711cdfa6bdfa434
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at pages.MailPage.writeSubject(MailPage.java:80)
+	at mail.LogInTest.writeLetterTest(LogInTest.java:121)
+cleanUpAndLogOut(mail.LogInTest)  Time elapsed: 13.559 sec  <<< FAILURE!
+java.lang.ClassCastException: com.sun.proxy.$Proxy8 cannot be cast to org.openqa.selenium.By
+	at mail.LogInTest.cleanUpAndLogOut(LogInTest.java:187)
