@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
+  <parameter name="browser" value="chrome"/>
+  <test name="FirefoxTest(failed)" parallel="none">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="mail.LogInTest">
+        <methods>
+          <include name="sendLetterTest"/>
+          <include name="cleanUpAndLogOut"/>
+          <include name="cleanUpAndLogOut"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="writeLetterTest" invocation-numbers="0"/>
+          <include name="driverWait"/>
+          <include name="driverWait"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- mail.LogInTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test name="ChromeTest(failed)" parallel="none">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="mail.LogInTest">
+        <methods>
+          <include name="sendLetterTest"/>
+          <include name="cleanUpAndLogOut"/>
+          <include name="cleanUpAndLogOut"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="writeLetterTest" invocation-numbers="0 1"/>
+          <include name="driverWait"/>
+          <include name="driverWait"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- mail.LogInTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
